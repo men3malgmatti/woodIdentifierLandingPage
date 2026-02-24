@@ -17,6 +17,8 @@ const CONFIG = {
   CONTACT_EMAIL: 'monem.dakheel@gmail.com',
   PRIVACY_POLICY_URL: 'privacy.html',
   TERMS_OF_SERVICE_URL: 'terms.html',
+  APP_STORE_URL: "https://apps.apple.com/us/app/woodly-wood-identifier/id6756504293",
+
   
   // Color Scheme - Wood-themed warm brown (matches app theme)
   COLORS: {
