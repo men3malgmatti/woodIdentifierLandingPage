@@ -88,7 +88,26 @@ body {
   flex: 1;
   padding: 60px 0;
 }
+/* CTA */
 
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-container {
+  padding: 20px;
+}
+
+.cta-button{
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 6px;
+}
 /* Hero Section */
 .hero {
   text-align: center;
