@@ -107,6 +107,8 @@ body {
   border-width: 1px;
   border-color: black;
   border-radius: 6px;
+  font-size: 22px;
+  font-weight: 600;
 }
 /* Hero Section */
 .hero {
