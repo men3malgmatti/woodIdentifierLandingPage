@@ -131,12 +131,15 @@
       privacyLink.textContent = 'Privacy Policy';
     }
 
-    // Update CTA button to link to App Store
+    // Update CTA button to open App Store
     const ctaButton = document.getElementById('cta-button');
+    
     if (ctaButton && CONFIG.APP_STORE_URL) {
-      ctaButton.href = CONFIG.APP_STORE_URL;
-      ctaButton.target = "_blank";
-      ctaButton.rel = "noopener noreferrer";
+      ctaButton.style.cursor = "pointer";
+    
+      ctaButton.addEventListener('click', function () {
+        window.open(CONFIG.APP_STORE_URL, "_blank", "noopener,noreferrer");
+      });
     }
   }
 
