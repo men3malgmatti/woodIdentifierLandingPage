@@ -130,6 +130,14 @@
       privacyLink.href = CONFIG.PRIVACY_POLICY_URL;
       privacyLink.textContent = 'Privacy Policy';
     }
+
+    // Update CTA button to link to App Store
+    const ctaButton = document.getElementById('cta-button');
+    if (ctaButton && CONFIG.APP_STORE_URL) {
+      ctaButton.href = CONFIG.APP_STORE_URL;
+      ctaButton.target = "_blank";
+      ctaButton.rel = "noopener noreferrer";
+    }
   }
 
   /**
