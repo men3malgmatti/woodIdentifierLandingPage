@@ -7,6 +7,10 @@
   <title>Wood Identifier App – Identify Wood Species from a Photo | Woodly</title>
 
   <meta name="description" content="Woodly is an AI wood identifier app that helps you identify wood species instantly from a photo. Identify oak, walnut, maple and more with high accuracy.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wood Identifier App – Identify Wood Species from a Photo | Woodly">
+  <meta name="twitter:description" content="Identify wood species instantly from a photo using AI. Woodly helps you identify oak, walnut, maple and more.">
+  <meta name="twitter:image" content="https://woodlyapp.com/assets/new-logo.png">
 
   <!-- Canonical (CRITICAL FIX) -->
   <link rel="canonical" href="https://woodlyapp.com/" />
@@ -16,6 +20,8 @@
   <meta property="og:description" content="Identify wood species instantly from a photo using AI. Woodly helps you identify oak, walnut, maple and more.">
   <meta property="og:url" content="https://woodlyapp.com/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://woodlyapp.com/assets/new-logo.png">
+  <meta property="og:image:alt" content="Woodly AI wood identifier app logo">
 
   <meta name="theme-color" content="#8B5E3C">
 
@@ -30,8 +36,8 @@
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <img id="logo" src="" alt="App Logo" class="logo">
-        <h1 id="app-name" class="app-name">AI Wood Identifier App</h1>
+        <img id="logo" src="" alt="App Logo" class="logo" width="48" height="48">
+        <h1 id="app-name" class="app-name">Woodly</h1>
       </div>
     </div>
   </header>
@@ -40,10 +46,11 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h2 class="hero-title">Identify Wood Species Instantly with AI</h2>
+          <h2 class="hero-title">Woodly: Identify Wood Species Instantly with AI</h2>
           <p class="hero-description">
-            Snap a photo and get instant wood identification with detailed information about species, 
-            grain patterns, hardness, durability, and common uses. Powered by advanced AI technology.
+            Woodly helps you identify wood species from a photo in seconds, including grain patterns,
+            hardness, durability, and common uses. Learn more in our
+            <a href="wood-identifier.html" class="legal-link">wood identifier guide</a>.
           </p>
         </div>
       </div>
@@ -51,9 +58,15 @@
 
     <section class="cta">
       <div class="cta-container">
-        <button id="cta-button" class="cta-button">
-          App Store
-        </button>
+        <a
+          id="cta-button"
+          class="cta-button"
+          href="https://apps.apple.com/us/app/woodly-wood-identifier/id6756504293"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download on the App Store
+        </a>
       </div>
     </section>
 
@@ -105,13 +118,41 @@
           <a id="terms-link" href="terms.html" class="footer-link">Terms of Service</a>
           <span class="footer-separator">|</span>
           <a id="privacy-link" href="privacy.html" class="footer-link">Privacy Policy</a>
+          <span class="footer-separator">|</span>
+          <a href="wood-identifier.html" class="footer-link">Wood Identifier Guide</a>
         </nav>
       </div>
     </div>
   </footer>
 
   <script src="config.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Woodly",
+          "url": "https://woodlyapp.com/",
+          "logo": "https://woodlyapp.com/assets/new-logo.png"
+        },
+        {
+          "@type": "WebSite",
+          "name": "Woodly",
+          "url": "https://woodlyapp.com/"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Woodly",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "iOS",
+          "description": "AI wood identifier app that identifies wood species from a photo.",
+          "url": "https://woodlyapp.com/",
+          "downloadUrl": "https://apps.apple.com/us/app/woodly-wood-identifier/id6756504293"
+        }
+      ]
+    }
+  </script>
   <script src="index.js"></script>
 </body>
 </html>
-

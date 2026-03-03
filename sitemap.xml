@@ -4,9 +4,12 @@
     <loc>https://woodlyapp.com/</loc>
   </url>
   <url>
-    <loc>https://woodlyapp.com/privacy-policy</loc>
+    <loc>https://woodlyapp.com/privacy.html</loc>
   </url>
   <url>
-    <loc>https://woodlyapp.com/terms</loc>
+    <loc>https://woodlyapp.com/terms.html</loc>
+  </url>
+  <url>
+    <loc>https://woodlyapp.com/wood-identifier.html</loc>
   </url>
 </urlset>

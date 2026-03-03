@@ -101,14 +101,18 @@ body {
 }
 
 .cta-button{
+  display: inline-block;
   padding: 10px 15px;
   background-color: black;
   color: white;
+  text-decoration: none;
   border-width: 1px;
+  border-style: solid;
   border-color: black;
   border-radius: 6px;
   font-size: 22px;
   font-weight: 600;
+  cursor: pointer;
 }
 /* Hero Section */
 .hero {
@@ -388,4 +392,3 @@ body {
     font-size: 15px;
   }
 }
-

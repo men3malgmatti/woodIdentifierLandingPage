@@ -66,15 +66,12 @@
   function updatePageContent() {
     // Determine page type and set appropriate title
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    let pageTitle = `${CONFIG.APP_NAME} - AI-Powered Identification`;
-    
+
     if (currentPage === 'terms.html') {
-      pageTitle = `Terms of Service - ${CONFIG.APP_NAME}`;
+      document.title = `Terms of Service - ${CONFIG.APP_NAME}`;
     } else if (currentPage === 'privacy.html') {
-      pageTitle = `Privacy Policy - ${CONFIG.APP_NAME}`;
+      document.title = `Privacy Policy - ${CONFIG.APP_NAME}`;
     }
-    
-    document.title = pageTitle;
 
     // Update app name in header
     const appNameElement = document.getElementById('app-name');
@@ -131,15 +128,13 @@
       privacyLink.textContent = 'Privacy Policy';
     }
 
-    // Update CTA button to open App Store
+    // Keep App Store CTA as a crawlable link while allowing config overrides
     const ctaButton = document.getElementById('cta-button');
-    
+
     if (ctaButton && CONFIG.APP_STORE_URL) {
-      ctaButton.style.cursor = "pointer";
-    
-      ctaButton.addEventListener('click', function () {
-        window.open(CONFIG.APP_STORE_URL, "_blank", "noopener,noreferrer");
-      });
+      ctaButton.href = CONFIG.APP_STORE_URL;
+      ctaButton.setAttribute('target', '_blank');
+      ctaButton.setAttribute('rel', 'noopener noreferrer');
     }
   }
 
@@ -165,4 +160,3 @@
     });
   }
 })();
-
